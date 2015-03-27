@@ -10,6 +10,7 @@ amount = input("Enter the amount(in dollar), u need change for : ")
 amount_cents = int(amount*100)
 ans = []
 
+#The value of denom can be changed as per your requirement for coins to be used
 denoms = [25, 10, 5, 1]
 
 while amount_cents > 0:
