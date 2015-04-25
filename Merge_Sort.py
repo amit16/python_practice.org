@@ -23,7 +23,7 @@ def Merge_Sort(myList):
                 myList[k] = Right_myList[j]
                 j += 1        
             k +=1
-    
+        #For the remaining items, anyone of these two loops will execute
         while i < len(Left_myList):
             myList[k] = Left_myList[i]
             i += 1        
@@ -33,6 +33,10 @@ def Merge_Sort(myList):
             j += 1        
             k += 1
     return myList
+    
+    #Using Python in-built method - merge from heapq library, we can merge more easily
+    
+    #we can just return merge(Left_mylist, Right_myList) after ( from heapq import merge )  
         
     
 
