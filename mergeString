@@ -1,0 +1,20 @@
+A = 'abcklmnno'
+B = 'defgh'
+C = list()
+i = 0
+
+if len(A) > len(B):
+	length = len(B)
+	bS = A
+else:
+	length = len(A)
+	bS = B
+
+while i != length:
+	C.append(str(A[i]))
+	C.append(str(B[i]))
+	i = i + 1
+
+O = ''.join(C)
+O = O + bS[length:]
+print O
